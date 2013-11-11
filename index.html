@@ -3,13 +3,11 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="author" content="Nima Fatemi @nimaaa">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="modernizr/modernizr-2.0.6.js"></script>
+<script src="js/modernizr-2.0.6.js"></script>
 
-<script type="text/javascript">
-//rectangleworld
-function windowLoadHandler(){canvasApp()}function canvasSupport(){return Modernizr.canvas}function canvasApp(){function V(){s=1;o=s-1;u=8;c=70;h=255;p=140;M="rgba("+c+","+h+","+p+",";l=1;n=e.width;r=e.height;d=320;m=n/2;g=r/2;y=d-2;a={};f={};k=.1;L=.1;A=.1;O=0;N=2.5;E=280;S=0;x=0;T=-3-E;C=-750;w=2*Math.PI/1600;b=0;i=setInterval($,1e3/24)}function $(){o++;if(o>=s){o=0;for(q=0;q<u;q++){R=Math.random()*2*Math.PI;U=Math.acos(Math.random()*2-1);z=E*Math.sin(U)*Math.cos(R);W=E*Math.sin(U)*Math.sin(R);X=E*Math.cos(U);var e=J(z,x+W,T+X,.002*z,.002*W,.002*X);e.attack=50;e.hold=50;e.decay=160;e.initValue=0;e.holdValue=l;e.lastValue=0;e.stuckTime=80+Math.random()*20;e.accelX=0;e.accelY=O;e.accelZ=0}}b=(b+w)%(2*Math.PI);H=Math.sin(b);B=Math.cos(b);t.fillStyle="#000000";t.fillRect(0,0,n,r);e=a.first;while(e!=null){P=e.next;e.age++;if(e.age>e.stuckTime){e.velX+=e.accelX+k*(Math.random()*2-1);e.velY+=e.accelY+L*(Math.random()*2-1);e.velZ+=e.accelZ+A*(Math.random()*2-1);e.x+=e.velX;e.y+=e.velY;e.z+=e.velZ}j=B*e.x+H*(e.z-T);F=-H*e.x+B*(e.z-T)+T;v=d/(d-F);e.projX=j*v+m;e.projY=e.y*v+g;if(e.age<e.attack+e.hold+e.decay){if(e.age<e.attack){e.alpha=(e.holdValue-e.initValue)/e.attack*e.age+e.initValue}else if(e.age<e.attack+e.hold){e.alpha=e.holdValue}else if(e.age<e.attack+e.hold+e.decay){e.alpha=(e.lastValue-e.holdValue)/e.decay*(e.age-e.attack-e.hold)+e.holdValue}}else{e.dead=true}if(e.projX>n||e.projX<0||e.projY<0||e.projY>r||F>y){D=true}else{D=false}if(D||e.dead){K(e)}else{I=1-F/C;I=I>1?1:I<0?0:I;t.fillStyle=M+I*e.alpha+")";t.beginPath();t.arc(e.projX,e.projY,v*N,0,2*Math.PI,false);t.closePath();t.fill()}e=P}}function J(e,t,n,r,i,s){var o;var u;if(f.first!=null){o=f.first;if(o.next!=null){f.first=o.next;o.next.prev=null}else{f.first=null}}else{o={}}if(a.first==null){a.first=o;o.prev=null;o.next=null}else{o.next=a.first;a.first.prev=o;a.first=o;o.prev=null}o.x=e;o.y=t;o.z=n;o.velX=r;o.velY=i;o.velZ=s;o.age=0;o.dead=false;if(Math.random()<.5){o.right=true}else{o.right=false}return o}function K(e){if(a.first==e){if(e.next!=null){e.next.prev=null;a.first=e.next}else{a.first=null}}else{if(e.next==null){e.prev.next=null}else{e.prev.next=e.next;e.next.prev=e.prev}}if(f.first==null){f.first=e;e.prev=null;e.next=null}else{e.next=f.first;f.first.prev=e;f.first=e;e.prev=null}}if(!canvasSupport()){return}var e=document.getElementById("canvasOne");var t=e.getContext("2d");var n;var r;var i;var s;var o;var u;var a;var f;var l;var c,h,p;var d;var v;var m;var g;var y;var b;var w;var E,S,x,T;var N;var C;var k,L,A;var O;var M;var _;var D;var P;var H;var B;var j,F;var I;var q;var R,U;var z,W,X;V()}window.addEventListener("load",windowLoadHandler,false);var Debugger=function(){};Debugger.log=function(e){try{console.log(e)}catch(t){return}}
-</script>
+<script src="js/js.js"></script>
 
 <title>Ⓐnarchy.io | Internet Freedom</title>
 
