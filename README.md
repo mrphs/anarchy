@@ -1,4 +1,4 @@
-anarchy
-=======
+Anarchy.io
+==========
 
-Anarchy.io main page
+http://anarchy.io main page
